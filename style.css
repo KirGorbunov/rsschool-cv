@@ -24,9 +24,10 @@ body {
     135deg,
     hsl(0deg 0% 100%) 22%,
     hsl(307deg 11% 58%) 90%,
-    hsl(307deg 17% 21%) 100%
+    hsl(306, 18%, 21%) 100%
   );
 }
+
 
 .header {
     /* border: 1px solid red; */
@@ -39,14 +40,39 @@ body {
   list-style: none;
 }
 
-.nav-item {
-  padding: 0 20px;
+.nav-link{
+  text-decoration:none;
+  color: black;
+  background: linear-gradient(#3f2c3d 0 0) var(--p, 0) / var(--p, 0) no-repeat;
+  transition: 0.4s, background-position 0s;
+  padding: 10px 20px;
   line-height: 50px;
+}
+
+.nav-link:hover {
+  --p: 100%;
+  color: #fff;
 }
 
 .main {
     /* border: 1px solid red; */
 }
+
+.contact-list {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.contact-logo{
+  width: 16px;
+  filter: hue-rotate(10)
+}
+
+.contact-link{
+text-decoration:none;
+
+}
+
 
 .footer {
     /* border: 1px solid red; */
