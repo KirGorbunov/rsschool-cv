@@ -9,32 +9,32 @@ html {
 
 * {
     box-sizing: border-box;
-  }
-
+}
 
 body {
-  font-family: 'Roboto';
-  font-size: 20px;
-  min-height: 100vh;
-  margin: 0; padding: 0;
+  margin: 0; 
+  padding: 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-between;font-family: "Roboto";
+  font-size: 20px;
+  min-height: 100vh;
   background-image: linear-gradient(
     135deg,
     hsl(0deg 0% 100%) 22%,
     hsl(307deg 11% 58%) 90%,
-    hsl(306, 18%, 21%) 100%
+    hsl(306deg, 18%, 21%) 100%
   );
 }
 
-h2, p {
+h2, 
+p {
   margin: 10px;
 }
 
 /* =====================Header======================= */
 
-.header__inner {
+.header-inner {
   display: flex;
 }
 
@@ -42,18 +42,18 @@ h2, p {
   list-style: none;
 }
 
-.nav-link{
+.nav-link {
+  padding: 10px 20px;
   text-decoration: none;
-  color: black;
+  color: #000000;
   background: linear-gradient(#3f2c3d 0 0) var(--p, 0) / var(--p, 0) no-repeat;
   transition: 0.4s, background-position 0s;
-  padding: 10px 20px;
   line-height: 50px;
 }
 
 .nav-link:hover {
   --p: 100%;
-  color: #fff;
+  color: #ffffff;
 }
 
 .container-name {
@@ -69,37 +69,40 @@ h2, p {
 
 /* =====================MAIN======================= */
 
-
 .main-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;}
-
+  justify-content: space-between;
+}
 
 .section {
   width: 33%;
 }
 
-.contact-list, .skill-list {
-  list-style: none;
+.contact-list, 
+.skill-list {
   padding-left: 0px;
+  list-style: none;
 }
 
-.contact-logo, .skill-logo {
+.contact-logo, 
+.skill-logo {
   height: 20px;
 }
 
-.contact-link, .skill-link {
-  text-decoration:none;
-  color:black;
+.contact-link, 
+.skill-link {
+  text-decoration: none;
+  color: #000000;
 }
 
-.education-logo, .project-logo {
+.education-logo, 
+.project-logo {
   height: 70px;
   padding-left: 30px;
 }
 
-.container-center-block{
+.container-center-block {
   text-align: center;
 }
 
@@ -107,7 +110,7 @@ h2, p {
   font-weight: bold;
 }
 
-.container-right-block{
+.container-right-block {
   text-align: right;
 }
 
