@@ -28,13 +28,25 @@ body {
   );
 }
 
+h2, p {
+  margin: 10px;
+}
+
+/* =====================Header======================= */
 
 .header {
-    /* border: 1px solid red; */
+
+}
+
+.header__inner {
+  display: flex;
+}
+
+.my-photo {
+  position: relative;
 }
 
 .nav-list {
-  display: flex;
   justify-content: flex-end;
   align-items: center;
   list-style: none;
@@ -54,23 +66,70 @@ body {
   color: #fff;
 }
 
+/* =====================MAIN======================= */
+
 .main {
-    /* border: 1px solid red; */
+
 }
 
-.contact-list {
+.container-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;}
+
+
+.section {
+  width: 33%;
+}
+
+.contact-list, .skill-list {
   list-style: none;
   padding-left: 0px;
 }
 
-.contact-logo{
-  width: 16px;
-  filter: hue-rotate(10)
+.contact-item, .skill-item {
+  line-height: 20px;
 }
 
-.contact-link{
-text-decoration:none;
+.contact-logo, .skill-logo {
+  height: 20px;
+}
 
+.contact-link, .skill-link {
+  text-decoration:none;
+  color:black;
+}
+
+.contact-link:visited {
+  color: black
+}
+
+.education-logo, .project-logo {
+  height: 70px;
+  padding-left: 30px;
+}
+
+.container-center-block{
+  text-align: center;
+}
+
+.important-text {
+  font-weight: bold;
+}
+
+.last-section {
+  height: 150px;
+  margin: 0;
+}
+
+.container-right-block{
+  text-align: right;
 }
 
 
@@ -82,3 +141,4 @@ text-decoration:none;
     max-width: 1440px;
     margin: 0 auto;
   }
+

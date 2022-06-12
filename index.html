@@ -11,59 +11,88 @@
 <body>
     <header class = "header">
         <div class="container">
-            <nav class="nav">
-                <ul class="nav-list">
-                  <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
-                  <li class="nav-item"><a href="#about-me" class="nav-link">About me</a></li>
-                  <li class="nav-item"><a href="#code-example" class="nav-link">Code example</a></li>
-                  <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-                  <li class="nav-item"><a href="#my-projects" class="nav-link">My projects</a></li>
-                  <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
-                  <li class="nav-item"><a href="#english" class="nav-link">English</a></li>
-                </ul>
-            </nav>
+            <div class="header__inner">
+                <div class="photo">
+                    <img class="my-photo" src="assets/img/my_photo.jpg" alt="photo Kirill Gorbunov" title="photo Kirill Gorbunov">
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                    <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                    <li class="nav-item"><a href="#about-me" class="nav-link">About me</a></li>
+                    <li class="nav-item"><a href="#code-example" class="nav-link">Code example</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#my-projects" class="nav-link">My projects</a></li>
+                    <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                    <li class="nav-item"><a href="#english" class="nav-link">English</a></li>
+                    </ul>
+                </nav>
+                <div class="container container-name">
+                    <h1 class="Name">Kirill Gorbunov</h1>
+                </div>
+            </div>
         </div>
     </header>
 
 
     <main class="main">
-        <div class="container">
-            <h1>Kirill Gorbunov</h1>
-            <img src="assets/img/my_photo.jpg" alt="photo Kirill Gorbunov" title="photo Kirill Gorbunov">
-            <section id="contacts">
-                <h2>Contacts:</h2>
+        <div class="container main-container">
+            <section class="section" id="contacts">
+                <h2>Contacts</h2>
                 <ul class="contact-list">
-                    <li class="contact-item"> <img class="contact-logo" src="assets/img/github-logo.png" alt="GitHub logo" title="GitHub"> <a href="https://github.com/KirGorbunov" class="contact-link">github.com/KirGorbunov</a></li>
-                    <li class="contact-item"> <img class="contact-logo" src="assets/img/phone-logo.png" alt="phone logo" title="Phone"> <a href="https://github.com/KirGorbunov" class="contact-link">+7(915)435-40-14</a></li>
-                    <li class="contact-item"><a href="#code-example" class="contact-link">Code example</a></li>
-                    <li class="contact-item"><a href="#skills" class="contact-link">Skills</a></li>
-                    <li class="contact-item"><a href="#my-projects" class="contact-link">My projects</a></li>
-                    <li class="contact-item"><a href="#education" class="contact-link">Education</a></li>
-                    <li class="contact-item"><a href="#english" class="contact-link">English</a></li>
+                    <li class="contact-item"> <img class="contact-logo" src="assets/img/github-logo.png" alt="github logo" title="GitHub"> <a href="https://github.com/KirGorbunov" class="contact-link">github.com/KirGorbunov</a></li>
+                    <li class="contact-item"> <img class="contact-logo" src="assets/img/phone-logo.png" alt="phone logo" title="Phone"> +7(915)435-40-14</li>
+                    <li class="contact-item"> <img class="contact-logo" src="assets/img/telegram-logo.png" alt="telegram logo" title="Telegram"> <a href="https://t.me/KirGorbunov" class="contact-link">t.me/KirGorbunov</a></li>
+                    <li class="contact-item"> <img class="contact-logo" src="assets/img/mail-logo.png" alt="mail logo" title="Mail">&nbspKirGorbunov@gmail.com</li>
+                    <li class="contact-item"> <img class="contact-logo" src="assets/img/discord-logo.png" alt="discord-logo" title="Discord">&nbspKirGorbunov#6929</li>
+                    <li class="contact-item"> <img class="contact-logo" src="assets/img/location-logo.png" alt="location-logo" title="Location">&nbspMoscow</li>
                 </ul>
             </section>
-            <section id="about-me">
-                <h2>About me:</h2>
+    
+            <section class="section" id="about-me">
+                <div class="container-center-block">
+                    <h2>About me</h2>
+                    <p>I am a simple engineer who wants to become a <span class="important-text">developer</span></p>
+                </div>
             </section>
-            <section id="code-example">
-                <h2>Code example:</h2>
+
+            <section class="section" id="education">
+                <div class="container-right-block">
+                    <h2 class="right block">Education</h2>
+                    <a href="https://mpei.ru/Structure/Universe/epe/Pages/default.aspx"> <img class="education-logo" src="assets/img/MPEI-logo.png" alt="MPEI logo" title="MPEI"></a>
+                </div>
             </section>
-            <section id="skills">
-                <h2>Skills:</h2>
+
+                        
+            <section class="section" id="skills">
+                <h2>Skills</h2>
+                <ul class="skill-list">
+                    <li class="skill-item"> <img class="skill-logo" src="assets/img/python-logo.png" alt="python logo" title="Python"> <a href="https://www.python.org/" class="skill-link">Python</a></li>
+                    <li class="skill-item"> <img class="skill-logo" src="assets/img/django-logo.png" alt="django logo" title="Phone"> <a href="https://www.djangoproject.com/" class="skill-link">Django</a></li>
+                    <li class="skill-item"> <img class="skill-logo" src="assets/img/HTML-logo.png" alt="HTML logo" title="HTML">&nbspHTML</li>
+                    <li class="skill-item"> <img class="skill-logo" src="assets/img/CSS-logo.png" alt="CSS logo" title="CSS">&nbspCSS</li>
+                    <li class="skill-item"> <img class="skill-logo" src="assets/img/OOP-logo.png" alt="OOP logo" title="Discord">&nbspObject-oriented programming</li>
+                    <li class="skill-item"> <img class="skill-logo" src="assets/img/github-logo.png" alt="github-logo" title="Github">&nbspGit, Github</li>
+                    <li class="skill-item"> <img class="skill-logo" src="assets/img/english-logo.png" alt="english-logo" title="English">&nbspEnglish level - B2</li>
+                </ul>
             </section>
-            <section id="my-projects">
-                <h2>My projects:</h2>
+            
+            <section class="section" id="english">
+                <div class="container-center-block">
+                    <h2>Code example</h2>
+                    <pre><p>def count_bits(n):
+return str(bin(n)).count('1')
+                    </p></pre>
             </section>
-            <section id="education">
-                <h2>Education:</h2>
+
+            <section class="section" id="my-projects">
+                <div class="container-right-block">
+                    <h2>My projects</h2>
+                    <a href="https://www.tesla.com/"> <img class="project-logo" src="assets/img/tesla-logo.png" alt="Tesla logo" title="Tesla"></a>
+                    <a href="https://www.apple.com/"> <img class="project-logo" src="assets/img/apple-logo.png" alt="Apple logo" title="Apple"></a>
+                </div>
             </section>
-            <section id="my-projects">
-                <h2>My projects:</h2>
-            </section>
-            <section id="english">
-                <h2>English:</h2>
-            </section>
-        </div>
+                        
+
     </main>
 
 
